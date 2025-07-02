@@ -46,4 +46,21 @@ This repository collects key research papers on **self-supervised learning for h
 10. **Self-Supervised Learning With a Dual-Branch ResNet for Hyperspectral Image Classification** (IEEE, 2022)
 
     * Dual-branch pretext tasks: spectral-group classification & patch-based spectral reconstruction.
+    
+
+11. **Deep Self-Supervised Learning for Few-Shot Hyperspectral Image Classification** (Yu Li, Lei Zhang, Wei Wei & Yanning Zhang; IGARSS 2020, DOI:10.1109/IGARSS39084.2020.9323305)
+
+   * Employs a two-branch deep network: a cube-wise classification branch and a cube-pair self-supervised branch sharing a feature extractor. The cube-pair branch regularizes the main branch under few-shot settings by learning intra-cube relationships, improving classification with limited labeled samples.
+
+12.**Self-Supervised Learning for Few-Shot Hyperspectral Image Classification** (Nassim Ait Ali Braham, Lichao Mou, Jocelyn Chanussot, Julien Mairal & Xiao Xiang Zhu; IGARSS 2022, DOI:10.1109/IGARSS46834.2022.9884494)
+
+   * Pre-trains an encoder on unlabeled hyperspectral pixels using the Barlow-Twins algorithm, then fine-tunes with a handful (K=5–10) of labeled samples per class for classification.
+
+13. **Progressive Self-Supervised Pretraining for Hyperspectral Image Classification** (Peiyan Guan & Edmund Y. Lam; IEEE TGRS 2024, DOI:10.1109/TGRS.2024.3397740)
+
+   * Introduces a Progressive Self-Supervised Pretraining (PSP) framework that sequentially pretrains an encoder on datasets of increasing similarity (from general vision to target HSI), and uses Self-Supervised Elastic Weight Consolidation (SS-EWC) to mitigate catastrophic forgetting, enhancing convergence speed and representation quality.
+
+14. **Self-Supervised Feature Learning With CRF Embedding for Hyperspectral Image Classification** (Wang, Mei, Zhang, Zhang, Zhu & Li; IEEE TGRS 2019, DOI: 10.1109/TGRS.2018.2875943)
+
+    * HSINet-CRF: a three-layer deep and multi-feature CNN with embedded CRF for self-supervised feature learning via likelihood maximization across subpixel, pixel, and superpixel levels.
 

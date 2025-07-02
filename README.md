@@ -52,7 +52,7 @@ This repository collects key research papers on **self-supervised learning for h
 
    * Employs a two-branch deep network: a cube-wise classification branch and a cube-pair self-supervised branch sharing a feature extractor. The cube-pair branch regularizes the main branch under few-shot settings by learning intra-cube relationships, improving classification with limited labeled samples.
 
-12.**Self-Supervised Learning for Few-Shot Hyperspectral Image Classification** (Nassim Ait Ali Braham, Lichao Mou, Jocelyn Chanussot, Julien Mairal & Xiao Xiang Zhu; IGARSS 2022, DOI:10.1109/IGARSS46834.2022.9884494)
+12. **Self-Supervised Learning for Few-Shot Hyperspectral Image Classification** (Nassim Ait Ali Braham, Lichao Mou, Jocelyn Chanussot, Julien Mairal & Xiao Xiang Zhu; IGARSS 2022, DOI:10.1109/IGARSS46834.2022.9884494)
 
    * Pre-trains an encoder on unlabeled hyperspectral pixels using the Barlow-Twins algorithm, then fine-tunes with a handful (K=5–10) of labeled samples per class for classification.
 
@@ -63,4 +63,35 @@ This repository collects key research papers on **self-supervised learning for h
 14. **Self-Supervised Feature Learning With CRF Embedding for Hyperspectral Image Classification** (Wang, Mei, Zhang, Zhang, Zhu & Li; IEEE TGRS 2019, DOI: 10.1109/TGRS.2018.2875943)
 
     * HSINet-CRF: a three-layer deep and multi-feature CNN with embedded CRF for self-supervised feature learning via likelihood maximization across subpixel, pixel, and superpixel levels.
+    
+15. **Self-Supervised Contrastive Learning for Cross-Domain Hyperspectral Image Representation** (Hyungtae Lee & Heesung Kwon; ICASSP 2022, DOI: 10.1109/ICASSP43922.2022.9747010)
 
+    * Leverages a cross-domain CNN and a contrastive self-supervised framework to learn shared representations across multiple HSI datasets by clustering neighboring spectral vectors from the same image and separating spectral vectors from different images, then evaluates the learned embeddings on downstream classification tasks.
+   
+16. **Self-Supervised Learning With Multiscale Densely Connected Network for Hyperspectral Image Classification** (Zhen Ye, Zhan Cao, Huan Liu, Haipeng Liu, Wei Li & Lin Bai; IEEE TGRS 2024, Vol. 62)
+
+    * Proposes SS-MSDCNet: a two-stream self-supervised framework that generates positive pairs via spectral splitting augmentation and leverages a multiscale densely connected network with 3‑D densely connected modules and spatial attention to learn rich spatial–spectral features from unlabeled HSI data; fine-tuned on limited labeled samples for downstream classification.
+
+17. **Self-Supervised Low-Rank Representation (SSLRR) for Hyperspectral Image Classification** (Yuebing Wang, Jie Mei, Liqiang Zhang, Bing Zhang, Anjian Li & Yibo Zheng; IEEE TGRS 2018, Vol. 56, Issue 10, DOI: 10.1109/TGRS.2018.2823750)
+
+    * Develops SSLRR: integrates low-rank representation and spectral–spatial graph regularization as pixel-level and superpixel-level constraints to remove redundant and noisy information; solves via linearized alternating direction method with adaptive penalty; achieves state-of-the-art classification improvements on benchmark HSI datasets.
+   
+18. **Self-Supervised Convolutional Neural Network via Spectral Attention Module for Hyperspectral Image Classification** (Hong Huang, Liuyang Luo & Chunyu Pu; IEEE GRSL 2022, DOI: 10.1109/LGRS.2022.3141870)
+
+    * Proposes SAS-CNN: an end-to-end self-supervised CNN with a spectral attention module (SAM) that adaptively emphasizes important spectral bands; employs an encoder–decoder architecture with multi-layer concatenation to learn discriminative spectral–spatial features by reconstructing input 3-D cubes without labels, then fine-tunes on small labeled sets for downstream classification.
+   
+19. **Cross-Dataset Model Training for Hyperspectral Image Classification Using Self-Supervised Learning** (Jing Bai, Zichen Zhou, Zheng Chen, Zhu Xiao, Erlong Wei & Yihong Wen; IEEE TGRS 2024, Vol. 62, DOI: 10.1109/TGRS.2024.3493969)
+
+    * Introduces a cross-dataset self-supervised pretraining framework with an adaptive channel module and masked self-supervised learning to leverage multiple HSI datasets for generalized model training, enabling robust fine-tuning on downstream target datasets under spectral variability.
+
+20. **Cross-Dataset Model Training for Hyperspectral Image Classification Using Self-Supervised Learning** (Jing Bai, Zichen Zhou, Zheng Chen, Zhu Xiao, Erlong Wei & Yihong Wen; IEEE TGRS 2024, Vol. 62, DOI: 10.1109/TGRS.2024.3493969)
+
+    * Introduces a cross-dataset self-supervised pretraining framework with an adaptive channel module and masked self-supervised learning to leverage multiple HSI datasets for generalized model training, enabling robust fine-tuning on downstream target datasets under spectral variability.
+
+21. **A Novel Knowledge Distillation Method for Self-Supervised Hyperspectral Image Classification** (Qiang Chi, Guohua Lv, Guixin Zhao & Xiangjun Dong; Remote Sens. 2022, 14, 4523; DOI: 10.3390/rs14184523)
+
+    * Proposes a self-supervised knowledge distillation framework (SSKD) that adaptively generates soft labels via spectral–spatial similarity discrimination and nearest-neighbor matching, introduces a measure of soft label quality, and improves HSI classification with minimal labels.
+   
+22. **Hyperspectral Imagery Classification Based on Contrastive Learning** (Hou et al.; IEEE TGRS 2021, DOI: 10.1109/TGRS.2021.3139099)
+
+    * Two-stage training: self-supervised contrastive pretraining on unlabeled HSI samples via positive/negative pair construction, followed by feature fine-tuning with limited labeled data.

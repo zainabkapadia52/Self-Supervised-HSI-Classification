@@ -1,7 +1,5 @@
 # Self-Supervised-HSI-Classification
 
-# Self-Supervised HSI Classification Repository
-
 This repository collects key research papers on **self-supervised learning for hyperspectral image (HSI) classification**, supporting our problem statement of leveraging unlabeled data and minimal annotations for robust pixel-wise classification.
 
 
